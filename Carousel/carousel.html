@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="Author" content="bs" />
+<meta name="Description" content="description" />
+<meta name="Keywords" content="keywords" />
+<title></title>
+<style>
+	*{margin: 0; padding: 0}
+	ul,li{list-style: none;}
+	#index{position: relative; width: 500px; height: 350px; margin: 50px auto;}
+	#index .photo{overflow: hidden; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	#index .photo ul{position: absolute; top: 0; left: 0%; width: 1000%; height: 100%;}
+	#index .photo ul.transition{transition: left 0.3s;}
+	#index .photo ul li{float: left; width: 10%; height: 350px;}
+	#index .photo ul li img{display: block; width: 100%; height: 100%;}
+	#index .circle{overflow: hidden; position: absolute; bottom: 10px; left: 50%; height: 14px; border-radius: 7px; background: rgba(255,255,255,.5); margin-left: -50px;}
+	#index .circle ul{width: 200%; height: 100%;}
+	#index .circle ul li{float: left; width: 10px; height: 10px; border-radius: 100%; background: #999; margin: 2px 3px; cursor: pointer; transition: background .3s;}
+	#index .circle ul li.on{background: #f60;}
+	#index .button div{position: absolute; top: 50%; width: 22px; height: 30px; margin-top: -1px; background: rgba(0,0,0,0.25); line-height: 30px; text-align: center; font-size: 14px; font-weight: bold; color: #fff; cursor: pointer;}
+	#index .button div.right{right: 0;}
+</style>
+</head>
+<body>
+	<div id="index">
+		<div class="photo">
+			<ul class="transition">
+				<li><a href="#"></a><img src="images/colonnello.jpg" alt="colonnello"></li>
+				<li><a href="#"></a><img src="images/fon.jpg" alt="fon"></li>
+				<li><a href="#"></a><img src="images/luce.jpg" alt="luce"></li>
+				<li><a href="#"></a><img src="images/mammon.jpg" alt="mammon"></li>
+				<li><a href="#"></a><img src="images/reborn.jpg" alt="reborn"></li>
+				<li><a href="#"></a><img src="images/skull.jpg" alt="skull"></li>
+				<li><a href="#"></a><img src="images/verde.jpg" alt="verde"></li>
+			</ul>
+		</div>
+		<div class="circle">
+			<ul class="cir">
+				<li class="on"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="button">
+			<div class="left"><</div>
+			<div class="right">></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="carousel.js"></script>
+</body>
+</html>
