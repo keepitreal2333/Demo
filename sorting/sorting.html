@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="Author" content="bs" />
+<meta name="Description" content="description" />
+<meta name="Keywords" content="keywords" />
+<title></title>
+<style>
+	*{margin: 0; padding: 0}
+	ul,li{list-style: none;}
+	#box{width: 1000px; margin: 10px auto;}
+	#box #header{width: 100%; height: 40px; background: #ccc;}
+	#box #header .list{display: inline-block; line-height: 40px; margin-left: 60px; cursor: pointer;}
+	#box #header .hidebox{position: relative;}
+	#box #header .hidebox .hide{position: absolute; left: -5px; width: 100px; height: 62px; background: #ddd; display: none; z-index: 100;}
+	#box #header .hidebox .hide p{font-size: 14px; height: 30px; line-height: 30px; text-align: center; border-bottom: 1px solid #ccc;}
+	#box #content{width: 100%; margin-top: 10px;}
+	#box #content .goods{position: relative; width: 240px; height: 240px; display: inline-block; border: 1px solid #ccc; margin-right: 2px; margin-left: 2px; margin-bottom: 10px; text-align: center;}
+	#box #content .goods img{width: 200px; height: 200px;}
+	#box #content .goods .price{position: absolute; right: 0; bottom: 0; width: 60px; height: 60px; border-radius: 
+		50%; background: #ddd; line-height: 60px;}
+</style>
+</head>
+<body>
+	<div id="box">
+		<div id="header">
+			<span class="list">流行</span>
+			<span class="list">热销</span>
+			<span class="list">上新</span>
+			<div class="list hidebox">
+				<span class="jg">价格</span>
+				<div class="hide">
+					<p class="pp">价格从高到低</p>
+					<p class="pp">价格从低到高</p>
+				</div>
+			</div>
+		</div>
+		<div id="content">
+			<div class="thing">
+				<div class="goods">
+					<img src="images/goods1.jpg">
+					<p class="intro">商品1</p>
+					<div class="price">￥<span class="money">300</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods2.jpg">
+					<p class="intro">商品2</p>
+					<div class="price">￥<span class="money">339</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods3.jpg">
+					<p class="intro">商品3</p>
+					<div class="price">￥<span class="money">2345</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods4.jpg">
+					<p class="intro">商品4</p>
+					<div class="price">￥<span class="money">35</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods5.jpg">
+					<p class="intro">商品5</p>
+					<div class="price">￥<span class="money">3456</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods6.jpg">
+					<p class="intro">商品6</p>
+					<div class="price">￥<span class="money">546</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods7.jpg">
+					<p class="intro">商品7</p>
+					<div class="price">￥<span class="money">424</span></div>
+				</div>
+				<div class="goods">
+					<img src="images/goods8.jpg">
+					<p class="intro">商品8</p>
+					<div class="price">￥<span class="money">75</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="sorting.js"></script>
+</body>
+</html>
